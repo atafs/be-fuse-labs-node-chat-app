@@ -1,12 +1,21 @@
 # fuse-labs-node-chat-app
 
-#### run the app
+#### Course
+https://www.udemy.com/the-complete-nodejs-developer-course-2
+
+#### Run the app
 > nodemon server-server.js
 
-#### initial setup
-> mkdir fuse-labs-node-chat-app \
-> cd fuse-labs-node-chat-app \
+###### initial setup
+> mkdir fe-fuse-labs-node-chat-app \
+> cd fe-fuse-labs-node-chat-app \
 > npm init \
 > npm i express@4.14.0 \
 
-> git init 
+###### create git repository
+> git init \
+> git commit -m 'initial message' \
+> git push -u origin master 
+
+###### create web socket
+> npm i socket.io@1.4.8 --save

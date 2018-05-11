@@ -1,18 +1,23 @@
 {
-  "name": "fuse-labs-node-chat-app",
+  "name": "be-fuse-labs-node-chat-app",
   "version": "1.0.0",
-  "description": "Create a socket io",
+  "description": "Create a Web Socket",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "6.2.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atafs/be-fuse-labs-node-chat-app.git"
   },
   "author": "Americo Tomas",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atafs/be-fuse-labs-node-chat-app/issues"
+  },
+  "homepage": "https://github.com/atafs/be-fuse-labs-node-chat-app#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
   }
 }
