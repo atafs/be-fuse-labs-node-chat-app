@@ -25,3 +25,12 @@ http://localhost:3000/socket.io/socket.io.js
 
 ###### libraries for tests
 > npm install expect@1.20.2 mocha@3.0.2 nodemon@1.10.2 --save-dev
+
+#### About socket.io:
+###### io.on(): xxx
+###### io.emit(): xxx 
+
+###### socket.on(): xxx
+###### socket.emit(): xxx
+###### socket.broadcast.emit(): xxx
+
