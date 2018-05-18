@@ -21,3 +21,6 @@ http://localhost:3000/socket.io/socket.io.js
 
 ###### create web socket
 > npm i socket.io@1.4****.8 --save
+
+###### install libraries for tests
+> npm install expect@1.20.2 mocha@3.0.2 nodemon@1.10.2 --save-dev
