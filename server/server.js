@@ -18,16 +18,16 @@ var io = socketIO(server);
 io.on('connection', (socket) => {
     console.log('New user connected in server');
 
-    // emit event
-    socket.emit('newMessage', {
-        from: 'ana@ana.com',
-        text: 'What is going on TOO?',
-        createdAt: 123123
-    });
-
     // create listener
     socket.on('createMessage', (message) => {
         console.log('createMessage', message);
+
+        // emit event to multiple connections
+        io.emit('newMessage', {
+            from: message.from,
+            text: message.text,
+            createdAt: new Date().getTime()
+        });
     });
 
     socket.on('disconnect', () => {

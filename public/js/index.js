@@ -4,12 +4,6 @@ var socket = io();
 // events
 socket.on('connect', function () {
     console.log('Connected to server on client')
-
-    // event
-    socket.emit('createMessage', {
-       from: 'Agrela',
-       text: 'That works form me'
-    });
 });
 
 socket.on('disconnect', function () {
