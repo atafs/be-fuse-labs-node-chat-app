@@ -19,15 +19,15 @@ io.on('connection', (socket) => {
     console.log('New user connected in server');
 
     // emit event
-    socket.emit('newEmail', {
-        from: 'americo@americo.com',
-        text: 'What is going on?',
-        createAt: 123
+    socket.emit('newMessage', {
+        from: 'ana@ana.com',
+        text: 'What is going on TOO?',
+        createdAt: 123123
     });
 
     // create listener
-    socket.on('createEmail', (newEmail) => {
-        console.log('createEmail', newEmail);
+    socket.on('createMessage', (message) => {
+        console.log('createMessage', message);
     });
 
     socket.on('disconnect', () => {
