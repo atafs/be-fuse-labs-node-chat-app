@@ -5,7 +5,7 @@ https://www.udemy.com/the-complete-nodejs-developer-course-2
 
 http://localhost:3000/socket.io/socket.io.js
 
-#### Run the app
+#### Run the app:
 > nodemon server/server.js
 
 ###### initial setup
@@ -19,8 +19,9 @@ http://localhost:3000/socket.io/socket.io.js
 > git commit -m 'initial message' \
 > git push -u origin master 
 
-###### create web socket
+#### Install:
+###### web socket
 > npm i socket.io@1.4****.8 --save
 
-###### install libraries for tests
+###### libraries for tests
 > npm install expect@1.20.2 mocha@3.0.2 nodemon@1.10.2 --save-dev

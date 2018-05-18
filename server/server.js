@@ -27,11 +27,13 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('newMessage', generateMessage('Admin', 'New user Joined!!'));
 
     // create listener
-    socket.on('createMessage', (message) => {
+    socket.on('createMessage', (message, callback) => {
         console.log('createMessage', message);
 
         // emit event to multiple connections
         io.emit('newMessage', generateMessage(message.from, message.text));
+
+        callback('This is from the server');
 
         // broadcast sends an event to everyone expect to this socket
         // socket.broadcast.emit('newMessage', generateMessage(message.from, message.text));
