@@ -3,8 +3,10 @@
 #### Course
 https://www.udemy.com/the-complete-nodejs-developer-course-2
 
+http://localhost:3000/socket.io/socket.io.js
+
 #### Run the app
-> nodemon server-server.js
+> nodemon server/server.js
 
 ###### initial setup
 > mkdir fe-fuse-labs-node-chat-app \
@@ -18,4 +20,4 @@ https://www.udemy.com/the-complete-nodejs-developer-course-2
 > git push -u origin master 
 
 ###### create web socket
-> npm i socket.io@1.4.8 --save
+> npm i socket.io@1.4****.8 --save
